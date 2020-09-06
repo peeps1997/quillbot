@@ -43,7 +43,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    SocketIoModule.forRoot({ url: 'http://botquill.herokuapp.com/', options: {} }),
+    SocketIoModule.forRoot({ url: 'https://botquill.herokuapp.com/', options: {} }),
     FormsModule,
   ],
   providers: [BackEndService, GlobalService,
