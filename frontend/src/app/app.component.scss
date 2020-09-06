@@ -1,0 +1,121 @@
+/deep/ .toastr-custom {
+  background: #000 !important;
+  box-shadow: none !important;
+  background-color: #000 !important;
+}
+
+/deep/ .mat-form-field-underline,
+/deep/ .mat-form-field-ripple {
+  background-color: #000 !important;
+  height: 3px !important;
+}
+
+/deep/ .mat-chip-list-wrapper {
+  height: 40px !important;
+}
+
+
+
+/deep/ .mat-form-field-infix {
+  overflow: hidden !important;
+  padding-left: 0.3rem !important;
+  padding-right: 0.3rem !important;
+}
+
+/deep/ .mat-form-field-label {
+  color: #000 !important;
+}
+
+/deep/ * {
+  font-weight: 700 !important;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .container {
+    .row {
+      .url {
+        background: #fff;
+        color: #000;
+        font-size: 18px;
+        height: 40px;
+        font-weight: 700;
+        border: 3px solid #000;
+        border-radius: 0px;
+        font-family: monospace;
+      }
+
+      input.url {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        text-align: left;
+        font-weight: 700;
+        font-family: monospace;
+      }
+
+      input::placeholder.url {
+        color: #000;
+        font-weight: 700;
+      }
+
+      .subscribe {
+        background: #fff;
+        color: #000;
+        border-radius: 0px;
+        border: 3px solid #000;
+        font-weight: 700;
+        font-family: monospace;
+        font-size: 20px;
+        box-shadow: 5px 4px 0px #000;
+      }
+
+      .subscribe:disabled {
+        opacity: 0.5;
+      }
+
+      .keywords {
+        background: #fff;
+        color: #000;
+        border-radius: 0px;
+        border: 3px solid #000;
+        font-weight: 700;
+        font-family: monospace;
+        font-size: 20px;
+      }
+
+      .chat-container {
+        background: #fff;
+        color: #000;
+        border-radius: 0px;
+        border: 3px solid #000;
+        font-family: monospace;
+        height: 500px;
+        overflow-y: scroll;
+        padding: 1em;
+
+        .chat-img {
+          width: 4em;
+          margin: 0.3em;
+        }
+
+        .chat-author {
+          font-size: 18px;
+        }
+
+        .chat-text {
+          opacity: 0.85;
+          word-break: break-all;
+        }
+
+        .chat-message {
+          border: 3px solid #000;
+        }
+       
+      }
+    }
+  }
+}

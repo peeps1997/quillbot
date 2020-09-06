@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "target": "es2017",
+    "sourceMap": false,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@core/*": ["src/core/*"],
+      "@app/*": ["src/app/*"],
+      "@pipes/*": ["src/common/pipes/*"],
+      "@utils/*": ["src/common/utils/*"],
+      "@constants": ["src/common/config/constants.config"],
+      "@models/*": ["src/common/models/*"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "exclude": [
+    "node_modules",
+    "typings"
+  ]
+}
