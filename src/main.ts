@@ -21,7 +21,6 @@ import _ from 'lodash';
           const config = app.get<ConfigService>(ConfigService);
           const port = parseInt(config.get<string>('PORT'));
           const host = config.get<string>('HOST');
-          app.setGlobalPrefix('api');
           app
             .listen(
               !_.isNaN(port) ? port : 3000,

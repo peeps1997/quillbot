@@ -5,7 +5,7 @@ export class BackendConfig {
 
     public constructor() {
         if (environment.production) {
-            this.API_BASE_ENDPOINT = 'http://botquill.herokuapp.com//api/';
+            this.API_BASE_ENDPOINT = 'http://botquill.herokuapp.com/api/';
             this.SOCKEND_BASE_ENDPOINT = 'http://botquill.herokuapp.com/';
         }
     }

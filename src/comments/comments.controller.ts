@@ -4,7 +4,7 @@ import { YoutubeIDPipe } from '@pipes/youtube.pipe';
 import { SubscribeVideoDTO } from './dto/subscribe-video.dto';
 import { UnSubscribeVideoDTO } from './dto/unsubscribe-video.dto';
 import { Response } from 'express';
-@Controller('comments')
+@Controller('api/comments')
 export class CommentsController {
   constructor(private commentService: CommentsService) {}
 

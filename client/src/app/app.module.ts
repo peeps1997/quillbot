@@ -20,7 +20,6 @@ import { MatChipsModule } from "@angular/material/chips";
 import { MatIconModule } from "@angular/material/icon";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { APIInterceptor } from './app.interceptor';
-import { BackendConfig } from './constants/config';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   fgsType: SPINNER.ballScaleMultiple,
@@ -44,7 +43,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    SocketIoModule.forRoot({ url: new BackendConfig().SOCKEND_BASE_ENDPOINT, options: {} }),
+    SocketIoModule.forRoot({ url: 'http://botquill.herokuapp.com/', options: {} }),
     FormsModule,
   ],
   providers: [BackEndService, GlobalService,
